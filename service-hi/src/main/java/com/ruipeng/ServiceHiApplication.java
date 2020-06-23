@@ -35,7 +35,7 @@ public class ServiceHiApplication {
     @GetMapping("/hi")
     public String callHome() {
         log.info("calling trace service-hi");
-        return restTemplate.getForObject("http://localost:8989/miya", String.class);
+        return restTemplate.getForObject("http://localhost:8989/miya", String.class);
     }
 
     @GetMapping("/info")
